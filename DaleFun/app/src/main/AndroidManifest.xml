@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DaleFun"
+        tools:targetApi="31">
+        <activity
+            android:name="com.kayra.dalefun.TimeKeeper"
+            android:exported="false" />
+        <activity
+            android:name="com.kayra.dalefun.LearntoScore"
+            android:exported="false" />
+        <activity
+            android:name="com.kayra.dalefun.thirtyHealth"
+            android:exported="false" />
+        <activity
+            android:name="com.kayra.dalefun.twentyHealth"
+            android:exported="false" />
+        <activity
+            android:name="com.kayra.dalefun.eighteenHealth"
+            android:exported="false" />
+        <activity
+            android:name="com.kayra.dalefun.smallerHealth"
+            android:exported="false" />
+        <activity
+            android:name="com.kayra.dalefun.AdviceHealth"
+            android:exported="false" />
+        <activity
+            android:name="com.kayra.dalefun.Health"
+            android:exported="false" />
+        <activity
+            android:name="com.kayra.dalefun.Score"
+            android:exported="false" />
+        <activity
+            android:name=".BlackJack"
+            android:exported="false" />
+        <activity
+            android:name="com.kayra.dalefun.CarSuggestion"
+            android:exported="false" />
+        <activity
+            android:name="com.kayra.dalefun.GuessTheNumber"
+            android:exported="false" />
+        <activity
+            android:name="com.kayra.dalefun.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

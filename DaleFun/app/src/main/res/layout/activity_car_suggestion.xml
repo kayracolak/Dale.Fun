@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34DBF1"
+    tools:context="com.kayra.dalefun.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/gearboxlinear"
+        android:layout_width="176dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/sizelinear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/gearbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:text="Gearbox : "
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/manuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="manuel"
+            android:text="Manual" />
+
+        <CheckBox
+            android:id="@+id/automatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="auto"
+            android:text="Automatic" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sizelinear"
+        android:layout_width="184dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/sizeofcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:text="Size : "
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="smalls"
+            android:text="Small" />
+
+        <CheckBox
+            android:id="@+id/standart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="standarts"
+            android:text="Standart" />
+
+        <CheckBox
+            android:id="@+id/big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="bigs"
+            android:text="Big" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seatlinear"
+        android:layout_width="184dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="240dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/salarylinear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/seat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:text="Seat Capacity : "
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/seat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="twos"
+            android:text="2" />
+
+        <CheckBox
+            android:id="@+id/seat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fours"
+            android:text="4-5" />
+
+        <CheckBox
+            android:id="@+id/seat3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sixs"
+            android:text="6+" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/salarylinear"
+        android:layout_width="195dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:text="Your Salary : TL"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/salary1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="tens"
+            android:text="10K - 30K" />
+
+        <CheckBox
+            android:id="@+id/salary2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="thirtys"
+            android:text="30K - 70K" />
+
+        <CheckBox
+            android:id="@+id/salary3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="seventys"
+            android:text="+ 70K" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/carlinear"
+        android:layout_width="377dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="475dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/performance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="performances"
+            android:text="Performance" />
+
+        <CheckBox
+            android:id="@+id/economical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="economicals"
+            android:text="Economical" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="225dp"
+        android:onClick="resultbtn"
+        android:text="RESULT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/backmenus"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="225dp"
+        android:onClick="btnBack"
+        android:text="back to menu"
+        android:textSize="12sp"
+        app:icon="@drawable/backtomenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/carname"
+        android:layout_width="375dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="60dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
